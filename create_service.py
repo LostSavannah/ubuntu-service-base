@@ -1,5 +1,6 @@
 import os
 import shutil
+
 UNIT_REGION = "Unit"
 SERVICE_REGION = "Service"
 INSTALL_REGION = "Install"
@@ -43,3 +44,4 @@ with open(filename, 'w', encoding='latin1') as fo:
         fo.write('\n')
 
 shutil.copy(filename, service_path)
+os.system('systemctl daemon-reload')
