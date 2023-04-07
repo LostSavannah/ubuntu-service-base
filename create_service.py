@@ -42,5 +42,4 @@ with open(filename, 'w', encoding='latin1') as fo:
             fo.write(f'{config}={value}\n')
         fo.write('\n')
 
-
-#shutil.copy(filename, service_path)
+shutil.copy(filename, service_path)
