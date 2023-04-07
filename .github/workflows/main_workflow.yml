@@ -1,0 +1,21 @@
+name: main workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull request:
+    branches:
+      - main
+  workflow_dispatch:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: windows10-01
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        run: echo "Ready"
+        shell: cmd
