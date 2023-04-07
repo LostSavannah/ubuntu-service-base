@@ -17,5 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: hello world
-        run: echo "Ready"
+        run: echo "Hellomoto!"
         shell: cmd
+
+  goodbye:
+    runs-on: ubuntu-01
+    steps:
+      - uses: actions/checkout@v2
+      - name: goodbye
+        run: echo "Bye bye"
+        shell: bash
